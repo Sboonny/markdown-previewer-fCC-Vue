@@ -1,5 +1,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
+import markdown from "directive/markdown.ts"
 
 export default defineComponent({
   name: "Markdown",
@@ -48,8 +49,11 @@ And here. | Okay. | I think we get it.
 1. And last but not least, let's not forget embedded images:
 
 ![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
-  `
+  ` as string,
     }
+  },
+  computed: {
+
   },
   mounted() {
     this.markdownPlaceholder
@@ -60,13 +64,16 @@ And here. | Okay. | I think we get it.
 <template>
   <main>
     <form>
-      <label for="editor">Markdown-Editor:</label>
+      <fieldset>
+        <legend>Markdown Previewer</legend>
+        <label for="editor">Editor:</label>
 
-      <textarea id="editor" name="markdown-editor" spellcheck="true">{{ markdownPlaceholder }}
+        <textarea id="editor" name="markdown-editor" spellcheck="true" v-modal="markdownPlaceholder">
 </textarea>
-      <label for="previewer">Markdown-Previwer:</label>
+        <label for="previewer">Preview:</label>
 
-      <textarea id="previewer" name="markdown-previewer" readonly></textarea>
+        <textarea id="previewer" name="markdown-previewer" readonly> {{ markdownPlaceholder }} </textarea>
+      </fieldset>
 
     </form>
 
