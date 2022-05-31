@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "dompurify": "^2.3.8",
+    "marked": "^4.0.16",
     "vue": "^3.2.25"
   },
   "devDependencies": {

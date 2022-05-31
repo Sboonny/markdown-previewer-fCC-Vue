@@ -1,6 +1,5 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
-import markdown from "directive/markdown.ts"
 
 export default defineComponent({
   name: "Markdown",
@@ -68,11 +67,11 @@ And here. | Okay. | I think we get it.
         <legend>Markdown Previewer</legend>
         <label for="editor">Editor:</label>
 
-        <textarea id="editor" name="markdown-editor" spellcheck="true" v-modal="markdownPlaceholder">
+        <textarea id="editor" name="markdown-editor" spellcheck="true" v-model="markdownPlaceholder">
 </textarea>
         <label for="previewer">Preview:</label>
 
-        <textarea id="previewer" name="markdown-previewer" readonly> {{ markdownPlaceholder }} </textarea>
+        <textarea id="previewer" name="markdown-previewer" readonly> {{ markdownPlaceholder }}</textarea>
       </fieldset>
 
     </form>
