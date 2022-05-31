@@ -1,5 +1,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
+import DOMPurify from 'dompurify';
+import marked from 'marked';
 
 export default defineComponent({
   name: "Markdown",
@@ -52,7 +54,9 @@ And here. | Okay. | I think we get it.
     }
   },
   computed: {
-
+    markdownOutput() {
+      return DOMPurify.sanitize(marked(this.markdownPlaceholder))
+    }
   },
   mounted() {
     this.markdownPlaceholder
