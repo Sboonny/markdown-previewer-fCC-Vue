@@ -21,3 +21,11 @@ User Story #5: When my markdown previewer first loads, the default text in the #
 User Story #6: When my markdown previewer first loads, the default markdown in the #editor field should be rendered as HTML in the #preview element.
 
 Optional Bonus (you do not need to make this test pass): My markdown previewer interprets carriage returns and renders them as br (line break) elements.
+
+## What I learnd.
+
+[v-html](https://eslint.vuejs.org/rules/valid-v-html.html).
+
+[bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind).
+
+[Module Resolution](https://www.typescriptlang.org/docs/handbook/module-resolution.html).
