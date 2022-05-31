@@ -24,6 +24,8 @@ Optional Bonus (you do not need to make this test pass): My markdown previewer i
 
 ## What I learnd.
 
-[v-html](https://eslint.vuejs.org/rules/valid-v-html.html)
-[bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
-[Module Resolution](https://www.typescriptlang.org/docs/handbook/module-resolution.html)
+[v-html](https://eslint.vuejs.org/rules/valid-v-html.html).
+
+[bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind).
+
+[Module Resolution](https://www.typescriptlang.org/docs/handbook/module-resolution.html).
